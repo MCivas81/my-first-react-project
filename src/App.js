@@ -8,10 +8,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+      </header>
         <main>
           <h1>My First React Project</h1>
         </main>
-      </header>
       <footer>Copyright by Me {date}</footer>
     </div>
   );
