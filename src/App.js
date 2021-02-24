@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  var today = new Date();
-  var date = today.getFullYear();
+  const today = new Date();
+  const date = today.getFullYear();
+
   return (
     <div className="App">
       <header className="App-header">
