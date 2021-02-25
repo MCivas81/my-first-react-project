@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
-import consola from 'consola';
+import Header from './components/Header';
+import Body from './components/Body';
+import Footer from './components/Footer';
+
+const data = {
+  name: 'HappyShoes',
+  logo: 'https://logoipsum.com/logo/logo-16.svg',
+  company: 'SZH Inc.',
+  cover: 'https://images.pexels.com/photos/4123897/pexels-photo-4123897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  title: 'Welcome to our brand new HappyShoes website!',
+  description: 'Lorem ipsum velit cillum excepteur adipisicing voluptate mollit. Laboris deserunt reprehenderit commodo id id minim non voluptate irure pariatur nulla.',
+}
 
 function App() {
-  const today = new Date();
-  const date = today.getFullYear();
-  const renderButton = function () {
-    consola.success('Hello')
-  };
-
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-        <main>
-          <h1>My First React Project</h1>
-          <button className="my-button" onClick={renderButton}>Button</button>
-        </main>
-      <footer>Copyright by Me {date}</footer>
+      <Header 
+      logo={data.logo} 
+      name={data.name} 
+      />
+      <Body 
+      cover={data.cover} 
+      title={data.title} 
+      description={data.description} 
+      />
+      <Footer 
+      company={data.company}
+      />
     </div>
   );
 }

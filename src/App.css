@@ -1,14 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
 body {
   background-color: #282c34;
   color: white;
-}
-
-.my-button {
-  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
 }
 
 .App {
   text-align: center;
+  animation: App-logo-spin 5s;
 }
 
 .App-logo {
