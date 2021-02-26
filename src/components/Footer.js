@@ -1,9 +1,17 @@
-import "./Footer.css";
+import { PropTypes } from "prop-types";
 
-function Footer(props) {
-  const today = new Date();
-  const date = today.getFullYear();
-  return <footer>{date} &copy; {props.company}</footer>
+import './Footer.css'
+
+function Footer({ company }) {
+  return (
+    <footer className="Footer">
+      {new Date().getFullYear()} © {company}
+    </footer>
+  );
 }
+
+Footer.propTypes = {
+  company: PropTypes.string.isRequired,
+};
 
 export default Footer;
