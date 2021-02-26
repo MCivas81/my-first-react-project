@@ -5,10 +5,16 @@
   align-items: center;
 }
 
+.Body-img {
+  width: 95%;
+  box-shadow: 5px 5px 10px 2px #808080;
+}
+
 .Body .content {
   width: 100%;
   padding: 30px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .Body-title {

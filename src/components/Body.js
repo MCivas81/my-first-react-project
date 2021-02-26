@@ -23,7 +23,7 @@ class Body extends React.Component {
 
     return (
       <main className="Body">
-        <img src={cover} alt={title} />
+        <img className="Body-img"src={cover} alt={title} />
         <div className="content">
           <h1 className="Body-title">{title}</h1>
           <h2 className="Body-description">{description}</h2>
