@@ -1,3 +1,5 @@
+import "./Product.css";
+
 function Product({image, title}) {
   return (
     <div className='Card'>

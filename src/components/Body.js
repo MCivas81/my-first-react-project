@@ -25,8 +25,8 @@ class Body extends React.Component {
       <main className="Body">
         <img src={cover} alt={title} />
         <div className="content">
-          <h1>{title}</h1>
-          <h2>{description}</h2>
+          <h1 className="Body-title">{title}</h1>
+          <h2 className="Body-description">{description}</h2>
           <div className="products-container">
             {showProducts ? (
               products.map((product) => {

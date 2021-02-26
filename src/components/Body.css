@@ -11,15 +11,18 @@
   box-sizing: border-box;
 }
 
-.Body img {
-  max-width: 95%;
-  box-shadow: 5px 5px 10px 2px #333333;
-}
-
-.Body h1{
+.Body-title {
   font-size: 50px;
 }
 
-.Body h2{
+.Body-description {
   font-size: 30px;
+}
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 50px;
 }
