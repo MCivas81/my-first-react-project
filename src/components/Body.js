@@ -1,5 +1,6 @@
 import React from "react";
 import { PropTypes } from "prop-types";
+import Product from "./Product";
 
 import "./Body.css";
 
@@ -29,7 +30,7 @@ class Body extends React.Component {
           <div className="products-container">
             {showProducts ? (
               products.map((product) => {
-                return <li>{product.title}</li>;
+                return <li>{<Product image={product.image} title={product.title}  />}</li>;
               })
             ) : (
               <button onClick={() => this.makeProductsVisible()}>
