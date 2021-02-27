@@ -12,7 +12,7 @@
 
 .Body .content {
   width: 100%;
-  padding: 30px;
+  padding: 30px 30px 60px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -23,6 +23,25 @@
 
 .Body-description {
   font-size: 30px;
+}
+
+.ShowBtn {
+  width: 150px;
+  height: 50px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px #808080;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.ShowBtn:hover {
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .products-container {

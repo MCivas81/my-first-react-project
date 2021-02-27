@@ -33,7 +33,7 @@ class Body extends React.Component {
                 return <li>{<Product image={product.image} title={product.title}  />}</li>;
               })
             ) : (
-              <button onClick={() => this.makeProductsVisible()}>
+              <button className="ShowBtn" onClick={() => this.makeProductsVisible()}>
                 Show products
               </button>
             )}
